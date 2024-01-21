@@ -3,6 +3,6 @@
 #include "scd.hpp"
 
 int main(int argc, char **argv) {
-    read_lines("history.txt");
+    read_lines("marks");
     return 0;
 }

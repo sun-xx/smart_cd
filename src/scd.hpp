@@ -1,10 +1,15 @@
 // Copyright 2024 Nash Sun.
 
 #include <fstream>
+#include <sstream>
 #include <iostream>
+#include <utility>
 
 #include <string>
-#include <vector>
+#include <deque>
+#include <queue>
+#include <map>
+
 #include <cstdlib>
 #include <cstring>
 
@@ -19,6 +24,6 @@ void leap(char *dir);
 void update_history(int limit);
 void update_frequency();
 
-void read_lines(std::string filename);
+void read_lines(std::string mode);
 
-char *remove_last_file(char *path);
+std::string remove_last_file(char *path);
