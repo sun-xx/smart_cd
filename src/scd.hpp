@@ -12,16 +12,17 @@
 
 #include <cstdlib>
 #include <cstring>
+#include <unistd.h> 
 
 
-void display_history(int limit);
+void display_history();
 void display_frequency();
+void display_marks();
 
-void leap_hint();
-void leap_mark();
-void leap(char *dir);
+void leap_ui(std::string mode);
+void leap(std::string path);
 
-void update_history(int limit);
+void update_history();
 void update_frequency();
 
 void read_lines(std::string mode);
