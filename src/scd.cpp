@@ -1,7 +1,6 @@
 // Copyright 2024 Nash Sun.
 
 #include "scd.hpp"
-#include <string>
 
 //#define DEBUG_history
 //#define DEBUG_frequency
@@ -201,6 +200,14 @@ void update_frequency(std::string path) {
         temp.push_back(frequency.top());
         frequency.pop();
     }
+    std::sort(temp.begin(), temp.end(),
+        [](const std::pair<int, std::string> &a, 
+           const std::pair<int, std::string> &b){
+            return a.first > b.first;
+           });
+    while(temp.size() > 10)
+        temp.pop_back();
+
     bool flag = false;
     for(int i=0; i<temp.size(); i++) {
         if(temp[i].second == path){
