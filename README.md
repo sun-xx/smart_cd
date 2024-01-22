@@ -1,5 +1,5 @@
 # smart_cd
-A smart CLI tool quickly lead you to complex paths.  
+A smart CLI tool quickly leading you to complex paths.  
 **NOTE : Only on windows.**
 
 ## Installation
