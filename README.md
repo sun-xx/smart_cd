@@ -15,7 +15,9 @@ make
 ```
   Then add build/scd.exe to Path.   
 
-## Usage  
+## Usage   
+First, create "history.txt", "frequency.txt" and "marks.txt" in the same directory as scd.exe.  
+
 ```
 scd            //list the history paths and go with a number choice.
 scd f          //list the paths in the order of frequency, and go with a number choice.
